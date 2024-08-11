@@ -1,0 +1,445 @@
+{
+	"info": {
+		"_postman_id": "f28dce71-b942-467e-9132-fd26279501e6",
+		"name": "CarRental API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "brand",
+							"value": "Audi S",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Sports Car",
+							"type": "text"
+						},
+						{
+							"key": "image_main",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/2.jpg"
+						},
+						{
+							"key": "image1",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/bike.jpg"
+						},
+						{
+							"key": "image2",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/Audi-S5-3.0-3-810x546.jpg"
+						},
+						{
+							"key": "image3",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/2.jpg"
+						},
+						{
+							"key": "image4",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/1.jpg"
+						},
+						{
+							"key": "image5",
+							"type": "file",
+							"src": "/C:/Users/rumpa/Desktop/Desktop/4.jpg"
+						},
+						{
+							"key": "miles",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "transmission",
+							"value": "Automatic",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2019",
+							"type": "text"
+						},
+						{
+							"key": "car_engine_size",
+							"value": "1.8cc",
+							"type": "text"
+						},
+						{
+							"key": "power",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "fuel",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "510",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "XoXo",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2021-01-20",
+							"type": "text"
+						},
+						{
+							"key": "availablity",
+							"value": "Available",
+							"type": "text"
+						},
+						{
+							"key": "dealer",
+							"value": " 1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				},
+				"description": "to upload car through API"
+			},
+			"response": []
+		},
+		{
+			"name": "Get: Booking detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/booking/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"booking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: Booking detail by bookingId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/booking/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: Booking detail by carId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/booking/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"booking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST:Upload Booking detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ruma",
+							"type": "text"
+						},
+						{
+							"key": "phone number",
+							"value": "017-201-2343",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2021",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-02-28",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-02-26",
+							"type": "text"
+						},
+						{
+							"key": "pickup_time",
+							"value": "06:00:00",
+							"type": "text"
+						},
+						{
+							"key": "pick_up_location",
+							"value": "KL sental",
+							"type": "text"
+						},
+						{
+							"key": "drop_off_location",
+							"value": "TTDI",
+							"type": "text"
+						},
+						{
+							"key": "car",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/booking/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"booking",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: CarList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: CarList by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: New car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/newcar/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newcar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: Used car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/usedcar/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"usedcar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: latest car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/latestcar/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"latestcar",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get: Dealer's Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/CarDealer/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"CarDealer",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
