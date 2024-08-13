@@ -155,14 +155,8 @@ Views handle the business logic and are responsible for processing incoming requ
 
 ## Testing
 
-The project includes unit and integration tests to ensure the correctness of the application's functionality.
-
 - **Test Tools:** `pytest-django`, `unittest`
-- **Test Coverage:** 
-  - Model tests for data integrity.
-  - Serializer tests for data validation.
-  - View tests for API endpoint correctness.
-  - Authentication and permission tests to ensure proper access control.
+
 
 ## Deployment
 
